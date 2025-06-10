@@ -17,12 +17,12 @@ public class binarysearch
 		while(i<j){
 		int mid = (i+j)/2;
 		if(arr[mid] == n){
-		    System.out.println(mid);
+		    System.out.println("index at :" +mid);
 		}
-		if(arr[i] < arr[mid]) i=mid+1;
+		if(arr[i] < n) i=mid+1;
 		else j =mid;
 	
 		}
-		System.out.println("not found");
+		
 	} 
 }

@@ -14,15 +14,15 @@ public class binarysearch
 		int n = sc.nextInt();
 		int i=0;
 		int j=arr.length-1;
-		while(i<j){
+		while(i<=j){
 		int mid = (i+j)/2;
 		if(arr[mid] == n){
 		    System.out.println("index at :" +mid);
 		}
-		if(arr[i] < n) i=mid+1;
-		else j =mid;
+		else if(arr[i] < n) i=mid+1;
+		else if(arr[j] > n) j =mid;
 	
 		}
-		
+		System.out.println("not found");
 	} 
 }
